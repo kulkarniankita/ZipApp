@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ANKITA</Machine>
+    <WindowsUser>Ankita</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\AudioCloud.exe">
+      <PackagePath>AudioCloud.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\AudioCloud.pdb">
+      <PackagePath>AudioCloud.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\packages\CharmFlyout.1.0.12\lib\winrt45\CharmFlyoutLibrary.dll">
+      <PackagePath>CharmFlyoutLibrary.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\01.png">
+      <PackagePath>Assets\01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\02.png">
+      <PackagePath>Assets\02.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\RecordedFiles.xaml">
+      <PackagePath>RecordedFiles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\packages\CharmFlyout.1.0.12\lib\winrt45\CharmFlyoutLibrary\Themes\Generic.xaml">
+      <PackagePath>CharmFlyoutLibrary\Themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

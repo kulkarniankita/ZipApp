@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ANKITA</Machine>
+    <WindowsUser>Ankita</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>B9B515CB14C48790E7CC25E939D80B4BBA72BAA5756B4CA49F63A912385AC615</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>d7fd2339-2811-4ce0-8237-de96c1c5cc90_1.0.0.0_neutral__4edd6jy7rk6v4</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>d7fd2339-2811-4ce0-8237-de96c1c5cc90_4edd6jy7rk6v4!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>d7fd2339-2811-4ce0-8237-de96c1c5cc90</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=ali.sufiyan</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-02T09:01:03.202</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\AudioCloud.exe">
+      <PackagePath>AudioCloud.exe</PackagePath>
+      <Modified>2013-05-02T09:01:01.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\AudioCloud.pdb">
+      <PackagePath>AudioCloud.pdb</PackagePath>
+      <Modified>2013-05-02T09:01:01.471</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\packages\CharmFlyout.1.0.12\lib\winrt45\CharmFlyoutLibrary.dll">
+      <PackagePath>CharmFlyoutLibrary.dll</PackagePath>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\01.png">
+      <PackagePath>Assets\01.png</PackagePath>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\02.png">
+      <PackagePath>Assets\02.png</PackagePath>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\RecordedFiles.xaml">
+      <PackagePath>RecordedFiles.xaml</PackagePath>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\packages\CharmFlyout.1.0.12\lib\winrt45\CharmFlyoutLibrary\Themes\Generic.xaml">
+      <PackagePath>CharmFlyoutLibrary\Themes\Generic.xaml</PackagePath>
+      <Modified>2013-05-01T10:36:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ankita\Documents\app\AudioCloud-master\audiocloud\AudioCloud\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-05-02T09:01:02.484</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
