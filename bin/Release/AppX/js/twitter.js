@@ -1,0 +1,1 @@
+﻿[{ "group": "sampleGroups[2]", "type": "picture", "title": "Article 5", "subtitle": "Article 5 Description", "description": "Article 5 Description", "content": "tum,", "backgroundImage": "/Content/UserFiles/1/Images/location.jpg" }]

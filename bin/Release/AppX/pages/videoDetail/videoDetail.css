@@ -1,0 +1,58 @@
+﻿#videoDetailContainer {
+    top:20px;
+    position:relative;
+    margin-left: 120px;
+    width:calc(100% - 120px);
+}
+
+#videoDetailInfo {
+    position:absolute;
+    left : 660px;
+    height:calc(100% - 30px);
+    overflow-x: hidden;
+    overflow-y:scroll;
+    top:0px;
+    width:calc(100% - 670px)
+}
+
+#videoDetailInfo pre {
+    font-family:'Segoe UI';
+    word-wrap: break-word;
+
+}
+
+#videoDetailPlayer {
+    width:640px;
+    overflow:hidden;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    #videoDetailContainer {
+        margin-left: 20px;
+        overflow-y:scroll;
+        height:calc(100% - 30px);
+        width:calc(100% - 20px);
+    }
+
+    #youtube {
+    width:280px;
+    height:150px;
+    overflow:hidden;
+}
+    #videoDetailPlayer {
+         width:280px;
+    overflow:hidden;
+    }
+
+    #videoDetailInfo {
+        word-wrap: break-word;
+
+    position:relative;
+    left:0px;
+    height:auto;
+    overflow-x: auto;
+    overflow-y:auto;
+    top:0px;
+    width:280px;
+}
+}

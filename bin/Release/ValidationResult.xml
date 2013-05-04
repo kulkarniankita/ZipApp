@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT OVERALL_RESULT="PASS" VERSION="2.2" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="kulkarniankita" OSVERSION="6.2.9200.0" OS="Microsoft Windows 8 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="CommandLine" ReportGenerationTime="5/2/2013 2:44:24 AM" ID="6eb48df89a547b09c949ab73fdf286a3">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Clean reversible install test" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
+    <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders test" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
+    <REQUIREMENT NUMBER="3" TITLE="Digitally signed file test" RATIONALE="An Authenticode digital signature allows users to be sure that the software is genuine. It also allows detection if a file has been tampered with e.g. infected by a virus." />
+    <REQUIREMENT NUMBER="4" TITLE="Support x64 Windows test" RATIONALE="To maintain compatibility with 64-bit versions of Windows, it is necessary that applications should natively support 64-bit or at minimum 32-bit Windows based applications to run seamlessly on 64-bit." />
+    <REQUIREMENT NUMBER="5" TITLE="OS version checking test" RATIONALE="Applications must not perform version checks for equality (== 5.1). If you need a specific feature, check whether the feature is available. If you need Windows XP, check for Windows XP or later (&gt;= 5.1), This way, your detection code will continue to work on future versions of Windows. Driver installers and uninstall modules should never check the OS version." />
+    <REQUIREMENT NUMBER="6" TITLE="User account control (UAC) test" RATIONALE="Most applications do not require administrator privileges at run time, and should be just fine running as a standard-user. Windows applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application." />
+    <REQUIREMENT NUMBER="7" TITLE="Adhere to system restart manager messages" RATIONALE="In a critical shutdown, applications that return FALSE to WM_QUERYENDSESSION will be sent WM_ENDSESSION and closed, while those that time out in response to WM_QUERYENDSESSION will be terminated." />
+    <REQUIREMENT NUMBER="8" TITLE="Safe mode test" RATIONALE="By default, most drivers and services that did not come preinstalled with Windows are not started in Safe Mode. They should remain disabled unless they are needed for basic operations of the system or for diagnostic and recovery purposes." />
+    <REQUIREMENT NUMBER="9" TITLE="Multiuser session test" RATIONALE="Windows users should be able to run concurrent sessions without conflict or disruption.  Applications must ensure that when running in multiple sessions either locally or remotely, the normal functionality of the application should not be impacted. Application settings and data files should not be persisted across users. A user’s privacy and preferences should be isolated to the user’s session." />
+    <REQUIREMENT NUMBER="10" TITLE="Crashes and hangs test" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
+      <TEST INDEX="47" NAME="App launch tests" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:23s.80ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:07s.64ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="11" TITLE="Compatibility and resiliency test" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="App manifest compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.42ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Windows security best practices test" RATIONALE="An application should not change the default Windows security settings." />
+    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.75ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Private Code Signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.37ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:03s.73ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Performance test" RATIONALE="The application should have a fast and responsive launch and suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications.">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:01s.87ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="60" NAME="Optimized Binding References" DESCRIPTION="When using bindings, WinJS.Binding.optimizeBindingReferences should be set to true to optimize the memory usage." EXECUTIONTIME="00h:00m:01s.79ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="43" NAME="Performance launch" DESCRIPTION="Application should have a responsive launch time with reasonable CPU, File IO and Memory usage" EXECUTIONTIME="00h:02m:07s.65ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="44" NAME="Performance suspend" DESCRIPTION="Application should have a responsive suspend with reasonable CPU and File IO usage" EXECUTIONTIME="00h:01m:35s.31ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="App manifest resources test" RATIONALE="The Appx Package Manifest should have valid resources defined in the resources.pri file, as per the Appx Packaging Specification and Appx Manifest Schema.">
+      <TEST INDEX="45" NAME="App resources validation" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.71ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:02s.79ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.63ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="File encoding" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:01s.55ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="22" TITLE="Direct3D feature level support" RATIONALE="Applications must render content on Direct3D feature level 9.1 hardware.">
+      <TEST INDEX="51" NAME="Direct3D feature level support" DESCRIPTION="Applications must render content on Direct3D feature level 9.1 hardware." EXECUTIONTIME="00h:00m:01s.95ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
+      <TEST INDEX="52" NAME="Special Use Capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.52ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute test" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:01s.23ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="Type location test" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.66ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="Type name case-sensitivity test" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.63ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="Type name correctness test" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.66ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="General metadata correctness test" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:01s.55ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="Properties test" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.63ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="36977kulkarniankita.DB2Basics" Type="Application" Source="AppxPackage" Publisher="CN=5DFCC599-6797-4B6F-8B3A-A02A112877A2" Version="1.0.0.0" Language="1033" OnSystemDrive="true" RootDirPath="C:\Program Files\WindowsApps\36977kulkarniankita.DB2Basics_1.0.0.0_neutral__ma0memv9wdk1e" PathEvidenceId="0x1bad" RNP="0x1" DNP="0xd" EvidenceId="0x1bad" Id="0000e804e84ee4376dd855270c0d67dac01600000904">
+        <Indicators>
+          <DirectoryIndicators>
+            <Directory Name="js" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js" RNP="0x9" DNP="0xb" UniqueId="0x1bb2" Id="0000ed830a2cad918e620bb3cae846c3985ea8ddae26" />
+            <Directory Name="groupdetail" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\groupdetail" RNP="0x9" DNP="0xb" UniqueId="0x1bca" Id="00003b4fc3c8ed2efc203806796fe64a580b9af9e6a9" />
+            <Directory Name="36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e" RNP="0x9" DNP="0xb" UniqueId="0x1bae" Id="000009a959eb4685d34b55e413dc507f062a565121e3" />
+            <Directory Name="cache" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0x9" DNP="0xb" UniqueId="0x1bb8" Id="0000663781854afbf1d26f24a4f215d0cd272476a692" />
+            <Directory Name="hub" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\hub" RNP="0x9" DNP="0xb" UniqueId="0x1bcd" Id="0000d9e9e46fa7970efef24ec662dc5c216d07c2ae1e" />
+            <Directory Name="twitterdetail" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\twitterdetail" RNP="0x9" DNP="0xb" UniqueId="0x1bd3" Id="0000a8cda04b7d5a8a1a294819c7be4e4f145fe879a9" />
+            <Directory Name="videodetail" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\videodetail" RNP="0x9" DNP="0xb" UniqueId="0x1bd6" Id="0000c615fe4999d091641fe357bb2baa7eaba6ef42bd" />
+            <Directory Name="pages" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages" RNP="0x9" DNP="0xb" UniqueId="0x1bc9" Id="000019ff601290dc13568ff4c70ea07fd47a73f13ab3" />
+            <Directory Name="itemdetail" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\itemdetail" RNP="0x9" DNP="0xb" UniqueId="0x1bd0" Id="0000876ea1abd821cc6c422d7df5d4d6203f744ca6ea" />
+          </DirectoryIndicators>
+          <PackageManifestIndicator>
+            <PackageManifest PackageFullName="36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e" />
+            <Identity Name="36977kulkarniankita.DB2Basics" Version="1.0.0.0" Publisher="CN=5DFCC599-6797-4B6F-8B3A-A02A112877A2" ProcessorArchitecture="neutral" />
+            <Dependencies>
+              <PackageDependency Name="Microsoft.WinJS.1.0" MinVersion="1.0.8514.0" />
+            </Dependencies>
+            <Properties>
+              <DisplayName>DB2 Basics</DisplayName>
+              <PublisherDisplayName>kulkarniankita</PublisherDisplayName>
+              <Logo>images\tile_50x50.png</Logo>
+            </Properties>
+            <Resources>
+              <Resource Language="EN-US" />
+            </Resources>
+            <Prerequisites>
+              <OSMinVersion>6.2.1</OSMinVersion>
+              <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+            </Prerequisites>
+            <Capabilities>
+              <Capability Name="internetClient" />
+            </Capabilities>
+          </PackageManifestIndicator>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="0000b2e3a035e1080a2e2742efa5612313a673def53a">
+            <File Name="static-4.js" Id="0000a6fadd835a407eefda9f99f77b5bb65bbff6031e" Size="0x212" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\static-4.js" LongPathHash="00004b85072ffaef271fce84159ed358724b6820d919" UniqueId="0x1bbd" />
+            <File Name="youtube-7.js" Id="0000541f772b9d26b95ed20d25d1ca573d8d8276c37d" ShortName="YOUTUB~3.JS" Size="0x4c7" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\youtube-7.js" LongPathHash="00005dbba4f26de7100e2b43e9d850c0c9f9b130c77e" UniqueId="0x1bc6" />
+            <File Name="videoDetail.html" Id="0000684cc673a8877246865c043775f8c8bfde6a85fa" ShortName="VIDEOD~1.HTM" Size="0x64a" BinaryType="UNKNOWN" Created="05/02/2013 06:37:55" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\videodetail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\videodetail\videodetail.html" LongPathHash="00003e3b74ebca135f74a2768fc381f1dd7927e66ced" UniqueId="0x1bd7" />
+            <File Name="youtube-17.js" Id="00000aa6ea4d7497e7ef95d29443d95d38d57b430ca8" ShortName="YOUTUB~2.JS" Size="0x1326" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\youtube-17.js" LongPathHash="00003756ba6f65265228e009fb38d9288d1cc6788008" UniqueId="0x1bc5" />
+            <File Name="hub.html" Id="0000a52f79c557ddf3e9abc3b2acc3fa7aa5a5904ba3" ShortName="HUB~1.HTM" Size="0x3fd" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\hub" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\hub\hub.html" LongPathHash="0000a72439a48e26b28ef4b9e5b0425f314bbb38741c" UniqueId="0x1bce" />
+            <File Name="provider.js" Id="00009b9fbec23a5d0f13842742ca88a8876fd945e63e" Size="0x1aff" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\provider.js" LongPathHash="00008822246f6168f33b5291db2d090316327f69bc0d" UniqueId="0x1bb7" />
+            <File Name="navigator.js" Id="0000d05a747c7319d25a9e84ea45412f109751b074a9" ShortName="NAVIGA~1.JS" Size="0x18be" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\navigator.js" LongPathHash="00000c89b97d3b638435f1eb9ec70dde34013d285014" UniqueId="0x1bb6" />
+            <File Name="static-14.js" Id="000001b9d03121068968c64df4b1866086c208e6f58b" ShortName="STATIC~1.JS" Size="0x1e4b" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\static-14.js" LongPathHash="00004ccb8c6b8b22e5cfea21ae04cbee7474dc58c722" UniqueId="0x1bbc" />
+            <File Name="static-6.js" Id="000023728e762d6c32f5fcbc05a43c60066fc8d09066" Size="0xd0" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\static-6.js" LongPathHash="000084308e84560b0841cba646a300a3a9d7da3ac333" UniqueId="0x1bbe" />
+            <File Name="itemDetail.js" Id="0000dca74c8deb676b7f46cd6a9b8b6e20d46c1390d6" ShortName="ITEMDE~1.JS" Size="0x508" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\itemdetail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\itemdetail\itemdetail.js" LongPathHash="0000e44d366a49a091168a48819e1669e68ba866a600" UniqueId="0x1bd2" />
+            <File Name="facebook-7851.js" Id="0000f4d927cb3d14f954435a69fdb3c412e73d06677a" ShortName="FACEBO~2.JS" Size="0x42a3" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\facebook-7851.js" LongPathHash="0000537cd51f6d808c44668860a0b07d2c33dc47fc70" UniqueId="0x1bba" />
+            <File Name="youtube-15.js" Id="000055a3fc8004e01d61085dbb61cb91333a8945bae8" ShortName="YOUTUB~1.JS" Size="0x5386" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\youtube-15.js" LongPathHash="000014c5e18e9c66dff5c06b6336e7568bfa3bab54e9" UniqueId="0x1bc4" />
+            <File Name="data.js" Id="0000c18ddc18a5d04dc7177d9133fbe3eca1fa644168" Size="0x10d0" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\data.js" LongPathHash="0000203508f50479b7de814152108308088b6ac90194" UniqueId="0x1bb3" />
+            <File Name="twitter-5.js" Id="0000e2a23e7769755d8334d4e047ef307529d95b0e2d" ShortName="TWITTE~3.JS" Size="0x22d1" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\twitter-5.js" LongPathHash="000045aee246f2e2936ab70dad0c20d1fe3e6fff777a" UniqueId="0x1bc2" />
+            <File Name="groupDetail.html" Id="0000a43bda8a9cb8fa83641e24fc65d9bed3528f8c70" ShortName="GROUPD~1.HTM" Size="0x548" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\groupdetail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\groupdetail\groupdetail.html" LongPathHash="000046da5ca9f0f00d05909ee6de1941e82fa52ee2d6" UniqueId="0x1bcb" />
+            <File Name="twitter-7847.js" Id="0000fbf5710e7dc363cca6adca6901c2cdeb069cfe41" ShortName="TWITTE~4.JS" Size="0x2a4e" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\twitter-7847.js" LongPathHash="0000afaf61593732251248cb990a981d94741d7a5a86" UniqueId="0x1bc3" />
+            <File Name="groupDetail.js" Id="0000bd4e419b7a73f1bd214b1fe9527788001416e80c" ShortName="GROUPD~1.JS" Size="0xbb2" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\groupdetail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\groupdetail\groupdetail.js" LongPathHash="000019bee6aaab282bf575c273c2798a63e46a86d236" UniqueId="0x1bcc" />
+            <File Name="itemDetail.html" Id="00005291cd80e32f4e03d0b29e3b0ddce4b6d5310643" ShortName="ITEMDE~1.HTM" Size="0x60a" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\itemdetail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\itemdetail\itemdetail.html" LongPathHash="000005be3c6feba8d3c9a22903e1633c74a4dbd96794" UniqueId="0x1bd1" />
+            <File Name="twitterDetail.html" Id="0000837402940b503b2a3148efb4b8a337a51242085a" ShortName="TWITTE~1.HTM" Size="0x543" BinaryType="UNKNOWN" Created="05/02/2013 06:37:55" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\twitterdetail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\twitterdetail\twitterdetail.html" LongPathHash="0000770a760570dff616f7686f61e13fb927d3f9f460" UniqueId="0x1bd4" />
+            <File Name="twitterDetail.js" Id="000011688514805c26c047d19ecb6c2c39478169b56e" ShortName="TWITTE~1.JS" Size="0x7b9" BinaryType="UNKNOWN" Created="05/02/2013 06:37:55" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\twitterdetail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\twitterdetail\twitterdetail.js" LongPathHash="0000cc54ee5252ffd96f1903664a3c660d5407bdfb2f" UniqueId="0x1bd5" />
+            <File Name="videoDetail.js" Id="00004d90a16559edfe02e4a26a6086a728a6b126982c" ShortName="VIDEOD~1.JS" Size="0x922" BinaryType="UNKNOWN" Created="05/02/2013 06:37:55" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\videodetail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\videodetail\videodetail.js" LongPathHash="000058ce7998004e95dd9d00ef9d048ac432f5393b41" UniqueId="0x1bd8" />
+            <File Name="twitter-3.js" Id="00005b89a9d7504f98f6d331a79577ede275837dcea1" ShortName="TWITTE~2.JS" Size="0xa68" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\twitter-3.js" LongPathHash="00004bbd7c1cdc672b88c4ca8f2dca5c10500820be2d" UniqueId="0x1bc1" />
+            <File Name="grid.js" Id="0000d9ace6e059d25cf582713703ae198d8b87e58776" Size="0x4593" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\grid.js" LongPathHash="000065ee75e62941ac43390b57f25692c471841f3759" UniqueId="0x1bb5" />
+            <File Name="rss-6.js" Id="00006796f32489f94ca44f50598bc00a1903ed4b25bc" Size="0xe2" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\rss-6.js" LongPathHash="00001d04a18a7868b86c4b47e0d5063e651c44961423" UniqueId="0x1bbb" />
+            <File Name="facebook-2801.js" Id="0000dde6807128e82a4a0ba99c8b5110a366f6bd2b67" ShortName="FACEBO~1.JS" Size="0x56" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\facebook-2801.js" LongPathHash="000080487c6c96468481807b572c4fefa7321b4cfa99" UniqueId="0x1bb9" />
+            <File Name="hub.js" Id="00003ded13f5027fb9b310ccbb665005f59bb30a520c" Size="0x856" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\hub" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\pages\hub\hub.js" LongPathHash="0000f420b43b330196358b050aaf33508c228c13e3e1" UniqueId="0x1bcf" />
+            <File Name="default.html" Id="0000863f6f040111e5e3b69c5a62d80d3936db792016" ShortName="DEFAUL~1.HTM" Size="0x471" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\default.html" LongPathHash="0000d8ebfaddf01de836f926297fd0ad02f82a77d51c" UniqueId="0x1baf" />
+            <File Name="default.js" Id="0000097a148361c96b679c00bd05dc27dd8fb027fe38" Size="0xc1f" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\default.js" LongPathHash="00003698f13e7b33add21582a8593ea03feb6af396f0" UniqueId="0x1bb4" />
+            <File Name="static-7846.js" Id="000097df79f0f8f68ca8e72e0899241ac839ca711062" ShortName="STATIC~2.JS" Size="0x828d" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\static-7846.js" LongPathHash="0000d3d0ac690de029663b5258551a2e3dc518e359cb" UniqueId="0x1bbf" />
+            <File Name="twitter-18.js" Id="0000a320d3a039c2147de9c5dbb6273992d5feb90406" ShortName="TWITTE~1.JS" Size="0x24f3" BinaryType="UNKNOWN" Created="05/02/2013 06:37:54" Modified="05/02/2013 06:37:55" Path="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\36977kulkarniankita.db2basics_1.0.0.0_neutral__ma0memv9wdk1e\js\cache\twitter-18.js" LongPathHash="000001d17d3a21d4fba42076487c2f54e91457445984" UniqueId="0x1bc0" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="0000e804e84ee4376dd855270c0d67dac01600000904" AnalysisVersion="1.54" DictionaryVersion="1.6" Type="Package" Id="36977kulkarniankita.DB2Basics_1.0.0.0_neutral__ma0memv9wdk1e">
+      <AitFile ErrorCode="0" Name="static-14.js" Id="000001b9d03121068968c64df4b1866086c208e6f58b" />
+      <AitFile ErrorCode="0" Name="default.js" Id="0000097a148361c96b679c00bd05dc27dd8fb027fe38">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Application.onerror" />
+          <AitFeature Name="WinJS.Application.onsettings" />
+          <AitFeature Name="WinJS.Binding.optimizeBindingReferences" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.populateSettings" />
+          <AitFeature Name="WinJS.UI.processAll" />
+          <AitFeature Name="Windows.ApplicationModel.Activation" />
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.System.Launcher.launchUriAsync" />
+          <AitFeature Name="Windows.UI.ApplicationSettings.SettingsCommand" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="youtube-17.js" Id="00000aa6ea4d7497e7ef95d29443d95d38d57b430ca8" />
+      <AitFile ErrorCode="0" Name="twitterDetail.js" Id="000011688514805c26c047d19ecb6c2c39478169b56e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.System.Launcher.launchUriAsync" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="static-6.js" Id="000023728e762d6c32f5fcbc05a43c60066fc8d09066" />
+      <AitFile ErrorCode="0" Name="hub.js" Id="00003ded13f5027fb9b310ccbb665005f59bb30a520c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application.addEventListener" />
+          <AitFeature Name="WinJS.Application.queueEvent" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationView.value" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationViewState.snapped" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="videoDetail.js" Id="00004d90a16559edfe02e4a26a6086a728a6b126982c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.Pages.define" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="itemDetail.html" Id="00005291cd80e32f4e03d0b29e3b0ddce4b6d5310643">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="youtube-7.js" Id="0000541f772b9d26b95ed20d25d1ca573d8d8276c37d" />
+      <AitFile ErrorCode="0" Name="youtube-15.js" Id="000055a3fc8004e01d61085dbb61cb91333a8945bae8" />
+      <AitFile ErrorCode="0" Name="twitter-3.js" Id="00005b89a9d7504f98f6d331a79577ede275837dcea1" />
+      <AitFile ErrorCode="0" Name="rss-6.js" Id="00006796f32489f94ca44f50598bc00a1903ed4b25bc" />
+      <AitFile ErrorCode="0" Name="videoDetail.html" Id="0000684cc673a8877246865c043775f8c8bfde6a85fa">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="twitterDetail.html" Id="0000837402940b503b2a3148efb4b8a337a51242085a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="default.html" Id="0000863f6f040111e5e3b69c5a62d80d3936db792016">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.UI.AppBar" />
+          <AitFeature Name="WinJS.UI.AppBarCommand" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="static-7846.js" Id="000097df79f0f8f68ca8e72e0899241ac839ca711062" />
+      <AitFile ErrorCode="0" Name="provider.js" Id="00009b9fbec23a5d0f13842742ca88a8876fd945e63e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.xhr" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localFolder" />
+          <AitFeature Name="Windows.Storage.CreationCollisionOption.replaceExisting" />
+          <AitFeature Name="Windows.Storage.FileIO.readTextAsync" />
+          <AitFeature Name="Windows.Storage.FileIO.writeTextAsync" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="twitter-18.js" Id="0000a320d3a039c2147de9c5dbb6273992d5feb90406" />
+      <AitFile ErrorCode="0" Name="groupDetail.html" Id="0000a43bda8a9cb8fa83641e24fc65d9bed3528f8c70">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.UI.ListView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="hub.html" Id="0000a52f79c557ddf3e9abc3b2acc3fa7aa5a5904ba3">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="static-4.js" Id="0000a6fadd835a407eefda9f99f77b5bb65bbff6031e" />
+      <AitFile ErrorCode="0" Name="groupDetail.js" Id="0000bd4e419b7a73f1bd214b1fe9527788001416e80c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.List" />
+          <AitFeature Name="WinJS.UI" />
+          <AitFeature Name="WinJS.UI.ListView.prototype" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationView.value" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationViewState" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="data.js" Id="0000c18ddc18a5d04dc7177d9133fbe3eca1fa644168">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.List" />
+          <AitFeature Name="WinJS.Namespace.define" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="navigator.js" Id="0000d05a747c7319d25a9e84ea45412f109751b074a9">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Class.define" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Promise" />
+          <AitFeature Name="WinJS.Promise.as" />
+          <AitFeature Name="WinJS.Promise.timeout" />
+          <AitFeature Name="WinJS.UI.Animation.enterPage" />
+          <AitFeature Name="WinJS.UI.Pages.render" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="grid.js" Id="0000d9ace6e059d25cf582713703ae198d8b87e58776">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Animation.pointerDown" />
+          <AitFeature Name="WinJS.UI.Animation.pointerUp" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationView.value" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationViewState.snapped" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="itemDetail.js" Id="0000dca74c8deb676b7f46cd6a9b8b6e20d46c1390d6">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.Pages.define" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="facebook-2801.js" Id="0000dde6807128e82a4a0ba99c8b5110a366f6bd2b67" />
+      <AitFile ErrorCode="0" Name="twitter-5.js" Id="0000e2a23e7769755d8334d4e047ef307529d95b0e2d" />
+      <AitFile ErrorCode="0" Name="facebook-7851.js" Id="0000f4d927cb3d14f954435a69fdb3c412e73d06677a" />
+      <AitFile ErrorCode="0" Name="twitter-7847.js" Id="0000fbf5710e7dc363cca6adca6901c2cdeb069cfe41" />
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>
